@@ -3,15 +3,24 @@
     padding: 0;
 }
 
+body{
+    background-image: url(https://thumbs.dreamstime.com/z/rua-de-new-york-city-manhattan-soho-no-fundo-do-tempo-por-sol-140739171.jpg);
+    background-color: #2c66c9;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
 .header {
-    background-image: url(https://cdn.pixabay.com/photo/2016/08/03/09/03/universe-1566159_960_720.jpg);
+    border-bottom: solid 3px;
+    border-left: solid 5px;
+    border-right: solid 5px;
     flex-wrap: wrap;
-    padding: 15px;
+    padding: 5px;
 }
 
 .myname{
     font-size: 50px;
-    color: #00e7ff;
+    color: black;
     display: inline-block;
 }
 
@@ -20,7 +29,7 @@
     float: right;
 }
 
-.header li{
+.header ul li{
     display: inline-block;
     margin: 20px;
 }
@@ -29,6 +38,179 @@
     text-decoration: none;
     font-size: 20px;
     line-height: 50px;
-    color: #00e7ff;
+    font-family: Arial Black;
+    color: black;
+}
+
+.foto{
+    max-width:200px;
+    max-height:100px;
+    width: auto;
+    height: auto;
 }
 /* end header*/
+
+/*Start section1(ABOUT ME)*/
+.section{
+    text-align: center;
+    font-family: Arial Black;
+    flex-wrap: wrap;
+}
+
+.section1{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aboutMe {
+    color:black;
+    font-size: 35px;
+    text-align: center;
+    top: 200px;
+    position: absolute;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+.p1{
+    margin: 10px;
+    color: black;
+    font-size: 25px;
+    padding: 5px;
+    text-align: justify;
+    position: absolute;
+    right: 0;
+    width: 50%;
+    flex-wrap: wrap;
+    display: flex;
+    border-bottom: solid 3px;
+ }
+
+ @media screen and(min-width: 690px) and (max-height: 1000px){
+    .section1{
+      clear: both;
+      width: 100%;
+    }
+    .aboutMe{
+        width: 50%;
+        float: left;
+        text-align: center;
+    }
+    .p1{
+        width: 50%;
+        display: inline;
+    }
+    .section2{
+        clear: both;
+        width: 100%;
+      }
+      .myWork{
+          width: 50%;
+          float: left;
+          text-align: center;
+          top: 630px;
+      }
+      .img-mywork{
+          width: 50%;
+          display: inline;
+          top: 590px;
+      }
+      .Contacts{
+          top: 1090px;
+      }
+}   
+/*end section1(ABOUT ME)*/
+
+/*start section2(MY WORKS)*/
+.myWork{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    top: 420px;
+    position: absolute;
+    width: 50%;
+}
+
+.img-mywork{
+    position: absolute;
+    top: 400px;
+    right: 0;
+    max-height: 150px;
+    width: 50%;
+}
+.imagem{
+    display: inline-block;
+}
+
+#firstImg{
+    max-width: 180px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+}  
+
+/*end section2(MY WORKS)*/
+
+.Contacts{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    top: 680px;
+    position: absolute;
+    width: 100%;
+}
+
+.Contacts ul{
+      list-style-type: none;
+}
+
+
+.footer{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    padding: 1px;
+    color:black ;
+    margin-top:auto;
+} 
+
+
+.redes{
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+}
+
+.redes img{
+    width: 50px;
+    height: 50px;
+}
+
+.redes ul li{
+    list-style-type: none;
+    display: inline;
+    flex-grow: 1;
+}
+
+
+/* @media screen and(max-width: 690px){
+    .section2{
+        clear: both;
+        width: 100%;
+      }
+      .myWork{
+          width: 50%;
+          float: left;
+          text-align: center;
+          top: 630px;
+      }
+      .img-mywork{
+          width: 50%;
+          display: inline;
+          top: 590px;
+      }
+      .Contacts{
+          top: 1090px;
+      }
+}    */
